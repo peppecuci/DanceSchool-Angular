@@ -1,0 +1,31 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="register-form">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" formControlName="username">
+  </div>
+  <div class="register-form">
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" formControlName="password">
+    <div *ngIf="registerForm.get('password')?.errors"></div>
+  </div>
+  <div class="register-form">
+    <label >Adresse: </label>
+      <ul>
+        <li><label for="street">Street: </label>
+          <input type="text" name="street" id="street" formControlName="street"><br>
+        </li>
+        <li> <label for="number">Number: </label>
+          <input type="text" name="number" id="number" formControlName="number"><br>
+        </li>
+        <li><label for="cap">CAP: </label>
+          <input type="text" name="cap" id="cap" formControlName="cap"><br>
+        </li>
+        <li>
+          <label for="city">City: </label>
+          <input type="text" name="city" id="city" formControlName="city"><br>
+        </li>
+      </ul>
+  </div>
+
+  <button type="submit">Register</button>
+</form>

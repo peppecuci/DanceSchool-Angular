@@ -1,0 +1,14 @@
+{
+  "users": [
+    {"id": 3, "username": "paolo", "password": "12345678"},
+    {"id": 4, "username": "giulio", "password": "87654321"}
+  ],
+  "classes": [
+    {"id": 1, "className": "bachata", "price": 10},
+    {"id": 2, "className": "salsa", "price": 10}
+  ],
+  "teacher": [
+    {"id":  1, "firstName":  "clive", "lastName": "clive",  "nationality": "mauritiens"},
+    {"id":  1, "firstName":  "giuseppe", "lastName": "cucinotta",  "nationality": "italiens"}
+  ]
+}
